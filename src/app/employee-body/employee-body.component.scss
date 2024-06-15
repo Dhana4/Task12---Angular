@@ -1,0 +1,52 @@
+.add_employee{
+    margin:1rem 2rem;
+    display:grid;
+    grid-template-columns: 3.5fr 0.7fr 1fr;
+}
+.body_content{
+    font-size: 1rem;
+}
+.add_emp_head{
+    font-weight: 550;
+}
+.export_add_btns{
+    margin-left:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    cursor:pointer;
+    gap:0.2rem;
+}
+.export_btn{
+    border:0.1vw solid grey;
+    background-color:white;
+}
+a{
+    text-decoration: none;
+    color : inherit;
+}
+.add_btn{
+    background-color:#FF616D;
+    border:none;
+    color:white;
+}
+.letter_filter{
+    display:flex;
+    margin:1rem 2rem;
+    align-items: center;
+}
+.filter_icon{
+    margin-right : 0.4rem;
+}
+app-filter{
+    margin : 1rem 2rem;
+    display:grid;
+    grid-template-columns: 0.1fr 0.1fr 1.3fr 1.8fr 4fr 1fr 1fr;
+    align-items: center;
+    gap : 1rem;
+    background-color: #FDF2F2;
+    border:1px solid rgb(201, 148, 156);
+    border-radius:5px;
+    padding : 0.5rem;
+}

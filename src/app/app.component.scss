@@ -1,0 +1,37 @@
+app-side-nav{
+    display:block;
+    height : 100vh;
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.2);
+}
+.side_nav_open{
+    width : 20vw;
+}
+.side_nav_close{
+    width : 5vw;
+}
+.handle_icon{
+    position:absolute;
+    cursor: pointer;
+}
+.handle_navOpen{
+    width : 2rem;
+    height : 2rem;
+    left :15rem;
+    top : 1rem;
+    transform: rotate(180deg);
+}
+.handle_navClose{
+    width : 1.5rem;
+    height : 1.5rem;
+    left : 3rem;
+    top :1rem;
+}
+.nav_body_division{
+    display:flex;
+}
+.body_navOpen{
+    width : 80vw;
+}
+.body_navClose{
+    width : 95vw;
+}

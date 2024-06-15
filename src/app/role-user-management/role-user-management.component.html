@@ -1,0 +1,7 @@
+<a routerLink="{{role_userManagement.routerName}}">
+<section class="role_userManagement" [ngClass]="{activeSession: isActive()}">
+    <img alt="{{role_userManagement.content}}" [src] = "role_userManagement.icon">
+    <span *ngIf = "isSideNavOpen()" class="nav_content">{{role_userManagement.content}}</span>
+    <img *ngIf = "isSideNavOpen()" alt="dropdown" [src] ="dropdown_icon()">
+</section>
+</a>

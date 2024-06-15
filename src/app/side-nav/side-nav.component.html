@@ -1,0 +1,25 @@
+<img *ngIf ="isSideNavOpen()" alt="tezo logo" class ="tezo_logo nav_icons" [src] = "tezo_logo_icon()">
+<img *ngIf ="!isSideNavOpen()" alt="tezo logo" class ="tezo_icon nav_icons" [src] = "tezo_icon()">
+<div  class = "options_head nav_content">{{all()}}</div>
+<div *ngFor="let option of all_options; let i = index ">
+    <app-all-options
+      [all_options]="all_options[i]"
+      [isSideNavOpen] = "isSideNavOpen">
+    </app-all-options>
+</div>
+<div *ngIf ="isSideNavOpen()" class="options_head nav_content">{{roles_management()}}</div>
+<div *ngIf ="!isSideNavOpen()" class="options_head nav_content">{{roles()}}</div>
+<div *ngFor = "let management of role_userManagement; let i = index"> 
+    <app-role-user-management 
+        [role_userManagement]="role_userManagement[i]"
+        [isSideNavOpen] = "isSideNavOpen">
+    </app-role-user-management>
+</div>
+<div *ngIf ="isSideNavOpen()" class = "install_updates">
+    <div class="nav_content">Install new Update 2.3.1A</div>
+    <div class="nav_content">Allow to launch the new update for the AD Application</div>
+    <div>
+        <button type="submit" class = "dismiss install_btns">Dismiss</button>
+        <button type="submit" class = "apply install_btns">Accept</button>
+    </div>
+</div> 

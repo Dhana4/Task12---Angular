@@ -1,0 +1,18 @@
+<span class ="body_content">Filter</span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path fill="#f44848" d="M10 18v-2h4v2zm-4-5v-2h12v2zM3 8V6h18v2z" />
+</svg>
+<select class="status_selection">
+    <option disabled selected>Status</option>
+    <option *ngFor="let options of statusOptions">{{options}}</option>
+</select>
+<p-multiSelect
+[options] = "locationOptions"
+[(ngModel)] = "selectedLocations"
+placeholder = "Select Locations"></p-multiSelect>
+<p-multiSelect
+[options] = "departmentOptions"
+[(ngModel)] = "selectedDepartments"
+placeholder = "select Departments"></p-multiSelect>
+<button type="reset"  class="apply_btn apply_reset_btns body_content">Reset</button>
+<button type="submit" class="reset_btn apply_reset_btns body_content">Apply</button>

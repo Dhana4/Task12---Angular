@@ -1,0 +1,43 @@
+.tezo_logo{
+    padding : 1rem 0 0 1rem;
+}
+.tezo_icon{
+    height : 3rem;
+    width : 3rem;
+    padding : 0.2rem 0 0 0.2rem;
+}
+.options_head{
+    margin:2rem 0 0 1rem;
+}
+.nav_content{
+    color:grey;
+    font-size:1rem;
+}
+.install_updates{
+    margin:0.5rem;
+    background-color:#FEF6F6;
+    border-radius:5px;
+    padding:0.8rem;
+}
+.install_updates div:nth-child(1){
+    color:red;
+    font-size:1rem;
+    justify-content:center;
+}
+.install_btns{
+    border-radius:5px;
+    border:none;
+    padding:0.3rem;
+    font-size:1.2rem;
+    cursor:pointer;
+    margin-top:0.5rem;
+}
+.dismiss{
+    color:red;
+    background-color:#FDE6E6;
+}
+.apply{
+    color:white;
+    background-color:#F44848;
+    margin-left:0.5rem;
+}

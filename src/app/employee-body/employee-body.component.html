@@ -1,0 +1,23 @@
+<section class ="add_employee">
+    <div>
+      <div class = "add_emp_head body_content">Employees</div>
+      <div class ="body_content">Find all of your company's employee accounts and their associated roles</div>
+    </div>
+    <button class ="export_btn export_add_btns">
+        <img alt="export icon" src="assets/Export.svg">
+        <span>EXPORT</span>
+    </button>
+    <button class ="add_btn export_add_btns">
+        <a routerLink="/AddEmployee" routerLinkActive="{export:true}">
+        <img alt="add icon" src="assets/Add.svg">
+        <span>ADD EMPLOYEE</span>
+       </a>
+    </button>
+</section>
+<section class ="letter_filter">
+    <div class = "filter_icon">
+        <i class="fa-solid fa-filter"></i>
+    </div>
+    <app-letter *ngFor = "let letter of letters()" [letter] = "letter"></app-letter>
+</section>
+<app-filter></app-filter>

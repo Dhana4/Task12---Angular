@@ -1,0 +1,6 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+<section class = "nav_body_division">
+    <app-side-nav  [isSideNavOpen] = "isSideNavOpen" [ngClass]="{side_nav_open: isSideNavOpen() , side_nav_close : !isSideNavOpen()}"></app-side-nav>
+    <img [ngClass]="{handle_navOpen : isSideNavOpen() , handle_navClose : !isSideNavOpen()}" alt = "handle icon" class ="handle_icon" [src] = "handle_icon()" (click) = "Toggle_nav()">
+    <app-body [ngClass] = "{body_navOpen : isSideNavOpen() , body_navClose : !isSideNavOpen()}"></app-body>
+</section>
